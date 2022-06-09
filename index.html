@@ -69,12 +69,21 @@
     </nav>
     <!-- Header -->
     <header>
+         <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+            <div class="overlay"></div>
+
+                <!-- The HTML5 video element that will create the background video on the header -->
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="../img/landingpage-BG2.mp4" type="video/mp4">
+                </video>
+
+                <!-- The header content -->
         <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in"></div>
-                <div class="intro-heading">I focus on positive impact.</div>
-                <div class="intro-lead-in">madrigalbrian@gmail.com</div>
-            </div>
+                <div class="intro-text">
+                    <div class="intro-lead-in"></div>
+                    <div class="intro-heading">I focus on positive impact.</div>
+                    <div class="intro-lead-in">madrigalbrian@gmail.com</div>
+                </div>
         </div>
     </header>
     <!-- Portfolio Grid Section -->
@@ -192,30 +201,34 @@
                 <div class="col-md-8">
                   <h4>Hello, I'm Brian!</h4>
                   <p>
-                    I enjoy solving problems with creative ingenuity and data driven results. My career background is in UX design, business operations, video production, and community organizing. Throughout my career I’ve developed skills in empathy, story-telling, and design to develop human-centric experiences.   
+                    I enjoy solving problems with creative ingenuity and data driven results. My career background is in UX design, business operations, video production, and community organizing. Throughout my career I’ve developed skills in empathy, curiosity, and story-telling.   
                   </p>
                   <ul class="list-unstyled">
                     <li class="media">
-                      <img class="mr-3" src="img/portfolio/wh-logo.png" alt="">
                       <div class="media-body">
+                        <h4 class="mt-0 mb-1">Featured in:</h4>
+                        <img class="mr-3" src="img/about/wh-logo.png" alt="">
                         <h5 class="mt-0 mb-1">Techhire - The White House Blog</h5>
                         Resilient Coders recieved funding from the white house and that funding helped launch my career.
+                        <br></br>
                         <a href="https://obamawhitehouse.archives.gov/blog/2016/12/02/whats-next-techhire" target="_blank" class="btn btn-primary">Read</a>
                       </div>
                     </li>
                     <li class="media my-4">
-                      <img class="mr-3" src="..." alt="Generic placeholder image">
+                      <img class="mr-3" src="img/about/microsoft_logo.png" alt="Generic placeholder image">
                       <div class="media-body">
-                        <h5 class="mt-0 mb-1">Fresh Tilled Soil Blog</h5>
-                        I wrote a blog post explaining my final project for the Fresh Tilled Soil blog.
-                        <a href="https://www.freshtilledsoil.com/apprentice-show-and-tell-impacting-bostons-community-gardens/" target="_blank" class="btn btn-primary">Read</a>
+                        <h5 class="mt-0 mb-1">Microsoft Blog</h5>
+                        Del, founder of Resilient Coders was awarded the MassTLC Leadership Award and I was invited to share an anecdote about Del and present to the audience. 
+                        <br></br>
+                        <a href="https://blogs.microsoft.com/newengland/2016/12/07/coding-outside-the-classroom-resilient-coders-david-delmar-on-making-change/" target="_blank" class="btn btn-primary">Read</a>
                       </div>
                     </li>
                     <li class="media">
-                      <img class="mr-3" src="..." alt="Generic placeholder image">
+                      <img class="mr-3" src="img/about/tenacity-logo.png" alt="Generic placeholder image">
                       <div class="media-body">
                         <h5 class="mt-0 mb-1">Tenacity and CBS News</h5>
                         I had a quick 15 second feature in CBS news segment that aired nationaly during the US Open. 
+                        <br></br>
                         <a href="https://www.youtube.com/watch?v=WW4SoZl7n3w" target="_blank" class="btn btn-primary">Watch</a>
                       </div>
                     </li>
@@ -300,7 +313,7 @@
                             <p class="item-intro text-muted">Emilio, Jesus, and I started producing creative projects in 2016. We were just kids who wanted to use our time productively and create projects we were proud of. Now, we've founded a design agency in April 2022.</p>
                             
 
-                            <p>You can see our website that is still in development at <a href="https://paletta.io/">paletta.io</a>. Our past projects are already posted in the website.</p>
+                            <p>You can see our website that is still in development at <a href="https://paletta.io/" target="_blank">paletta.io</a>. Our past projects are already posted in the website.</p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
 
                         </div>
@@ -424,10 +437,11 @@
                             <p>Develop a product for an end user in the food industry.</p>
                             <!--YouTube video link-->
                             <h3>Final Product</h3>
-                            <p>Below is a prototype of the mock sign up userflow for "volunteers" and "gardeners". I did not get the chance to develop the user flow for an admin community garden manager with the features I uncovered to be the most important for a minimal viable product to exist and iterate from there.</p>
+                            <p>Below is a prototype of the mock sign up userflow for "volunteers" and "gardeners". I did not get the chance to develop the user flow for an admin community garden manager with the most important features for a minimal viable product to exist.</p>
                             <iframe src="https://invis.io/6A12QSUKCB5S#/201459291_-A-homepage" width="100%" height="500px" title="Sample">
                             </iframe>
                             <br></br>
+                            <p>I wrote about the project in the <a href="https://www.freshtilledsoil.com/apprentice-show-and-tell-impacting-bostons-community-gardens/" target="_blank">Fresh Tilled Soil blog</a>.</p>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                         </div>
                     </div>
@@ -604,7 +618,7 @@
                             <!--YouTube video link-->
                             <h3>Final Product</h3>
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://youtu.be/QacD5HiF7ak" allowfullscreen></iframe>
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=QacD5HiF7ak&t=31s" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture" allowfullscreen></iframe>
                               </div>
                             <br></br>
                             <h3>Coincidental Outcome</h3>
@@ -625,6 +639,7 @@
         </div>
     </div>
     <!-- jQuery -->
+
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
